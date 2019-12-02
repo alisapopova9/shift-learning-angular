@@ -1,12 +1,14 @@
-$page-bg: #F5F5F5;
-
+@import "./assets/scss/_colors";
 html, body {
   height: 100vh;
   background-color: $page-bg;
   margin: 0;
   box-sizing: border-box;
+  padding: 0 15px;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .root {
   height: 100%;
+  cursor: default;
 }

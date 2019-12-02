@@ -1,6 +1,9 @@
+@import "../assets/scss/_colors";
+
 .main {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   align-items: center;
   min-height: 1px;
   max-width: 1264px;
@@ -11,10 +14,13 @@
 
 .header {
   flex: 0;
+  width: 100%;
 }
 .content {
   flex: 1;
+  width: 100%;
 }
 .footer {
   flex: 0;
+  width: 100%;
 }
