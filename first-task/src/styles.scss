@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+$page-bg: #F5F5F5;
+
+html, body {
+  height: 100vh;
+  background-color: $page-bg;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  height: 100%;
+}
