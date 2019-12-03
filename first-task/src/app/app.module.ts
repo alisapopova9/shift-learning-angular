@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { TabComponent } from './tab/tab.component';
+import { TabsComponent } from './tabs/tabs.component';
 import { ContentComponent } from './content/content.component';
 import { CardComponent } from './card/card.component';
 
@@ -14,7 +14,7 @@ import { CardComponent } from './card/card.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    TabComponent,
+    TabsComponent,
     ContentComponent,
     CardComponent
   ],

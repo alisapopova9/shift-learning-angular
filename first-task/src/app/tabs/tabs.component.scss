@@ -1,0 +1,39 @@
+@import "../../assets/scss/_colors";
+
+.tabs-container {
+
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__tab:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.tab {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.tab:hover {
+  color: $bold-font-color;
+  border-bottom: 4px solid $blue-font-color;
+}
+
+.tab_font {
+  color: $base-font-color;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  text-decoration: none;
+}
+
+.tab_selected {
+  color: $bold-font-color;
+  border-bottom: 4px solid $blue-font-color;
+}
