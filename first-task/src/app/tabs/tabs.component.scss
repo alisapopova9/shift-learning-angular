@@ -1,7 +1,6 @@
 @import "../../assets/scss/_colors";
 
 .tabs-container {
-
 }
 
 .tabs {
@@ -16,6 +15,7 @@
 }
 
 .tab {
+  box-sizing: border-box;
   display: inline-block;
   padding-bottom: 15px;
 }
@@ -34,6 +34,7 @@
 }
 
 .tab_selected {
+  box-sizing: border-box;
   color: $bold-font-color;
   border-bottom: 4px solid $blue-font-color;
 }

@@ -1,0 +1,9 @@
+<div class="cards-container">
+  <ul class="cards__list">
+    <li *ngFor="let card of cards" class="card-item">
+      <app-card [name]="card.name"
+                [description]="card.description"
+                [img]="card.img"></app-card>
+    </li>
+  </ul>
+</div>
