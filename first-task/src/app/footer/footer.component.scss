@@ -64,7 +64,9 @@
 }
 
 .footer__main {
+  box-sizing: border-box;
   height: 300px;
+  padding: 0 10px;
   background-color: $bold-font-color;
 }
 
