@@ -1,0 +1,148 @@
+@import "../../assets/scss/_colors";
+
+.footer-outer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contacts {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10px 58px 10px;
+  height: 158px;
+  background-color: $grey-bg-footer;
+}
+
+.footer-contacts__inner {
+  width: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contacts__column {
+  flex-basis: 320px;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $bold-font-color;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.footer-contact__logo {
+  margin-right: 9px;
+}
+
+.contacts__tel {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 320px;
+}
+
+.contacts-tel__text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: $base-font-color;
+  margin-bottom: 8px;
+}
+
+.contacts-tel__num {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: $bold-font-color;
+}
+
+.footer__main {
+  height: 300px;
+  background-color: $bold-font-color;
+}
+
+.footer-main__inner {
+  width: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding-top: 48px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-main__services {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.footer-service__header {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: $base-font-color;
+}
+
+.footer-services__service {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 320px;
+}
+
+.footer-service__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list__item:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.service-list__item-link {
+  text-decoration: none;
+  color: $white;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer-app {
+  display: flex;
+  margin-bottom: 45px;
+}
+.footer-app__logo:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.footer-signin__logo {
+  margin-right: 12px;
+}
+
+.footer-main__copyrights {
+  display: flex;
+}
+
+.footer-copyrights__logos {
+  margin-right: 16px;
+}
+
+.footer-logo:not(:last-of-type) {
+  margin-right: 4px;
+}
+
+.footer-copyrights__arr {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $base-font-color;
+}
