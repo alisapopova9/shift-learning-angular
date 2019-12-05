@@ -1,0 +1,79 @@
+@import "../../assets/scss/_colors";
+
+.card-container {
+  display: flex;
+}
+
+.card__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-right: 17px;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.10377);
+}
+
+.card__image {
+  display: block;
+}
+
+.card-content__link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-content__name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+}
+.card-content__name_font {
+  text-decoration: none;
+  color: $bold-font-color;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+
+.card-content__links {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.card-links__link-outer:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.card__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.card-link__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: $blue-font-color;
+}
+
+.card-link__logo:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.card-link__logo:last-of-type {
+  margin-right: 8px;
+}
+
+.card-content__description {
+
+}
+.card-description_font {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: $base-font-color;
+}

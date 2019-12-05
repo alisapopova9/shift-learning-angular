@@ -1,0 +1,13 @@
+@import "./assets/scss/_colors";
+html, body {
+  height: 100vh;
+  background-color: $page-bg;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.root {
+  height: 100%;
+  cursor: default;
+}
