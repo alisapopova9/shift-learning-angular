@@ -9,11 +9,11 @@ import { CardRepository } from '../model/card.repository';
 })
 export class CardsComponent implements OnInit {
 
-  constructor(private repository: CardRepository) { }
-
   get cards(): Card[] {
     return this.repository.getCards();
   }
+
+  constructor(private repository: CardRepository) { }
 
   public ngOnInit(): void {
   }
