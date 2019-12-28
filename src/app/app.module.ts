@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ContentComponent } from './content/content.component';
 import {CardModule} from './card/card.module';
+import { PointsComponent } from './points/points.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {CardModule} from './card/card.module';
     HeaderComponent,
     FooterComponent,
     TabsComponent,
-    ContentComponent
+    ContentComponent,
+    PointsComponent
   ],
   imports: [
     BrowserModule,
