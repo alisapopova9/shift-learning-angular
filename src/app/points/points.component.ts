@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-points',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./points.component.scss']
 })
 export class PointsComponent implements OnInit {
+  public searchForm: FormGroup;
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {
+  public ngOnInit(): void {
+    this.initForm();
+  }
+
+  public initForm(): void {
+    this.searchForm = this.fb.group({
+      city: ['Новосибирск'],
+      cardType: ['Все транспортные карты']
+    });
   }
 
 }

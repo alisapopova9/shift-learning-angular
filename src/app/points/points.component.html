@@ -5,4 +5,8 @@
     <br />
     О возможностях безналичного пополнения вы можете узнать в описании своей карты.
   </p>
+  <form [formGroup]="searchForm">
+    <app-custom-input [form]="searchForm"></app-custom-input>
+    <app-custom-select [form]="searchForm"></app-custom-select>
+  </form>
 </div>
