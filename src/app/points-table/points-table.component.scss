@@ -1,0 +1,54 @@
+@import "../../assets/scss/_colors";
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.table__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  text-decoration: none;
+}
+
+.table__row:hover {
+  background-color: #FAFAFA;
+}
+
+.row_header {
+  display: flex;
+  justify-content: space-between;
+  color: $base-font-color;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.table__cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell_point-name {
+  font-size: 18px;
+  line-height: 24px;
+  color: $bold-font-color;
+  margin-bottom: 8px;
+}
+
+.cell_address {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: $bold-font-color;
+}
+
+.cell_schedule {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: $bold-font-color;
+}

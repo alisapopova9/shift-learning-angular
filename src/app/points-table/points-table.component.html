@@ -1,0 +1,23 @@
+<div class="table">
+  <div class="row_header">
+    <div class="table__cell">
+      Название точки
+    </div>
+    <div class="table__cell">
+      Режим работы
+    </div>
+  </div>
+  <a href="#" *ngFor="let point of points" class="table__row">
+    <div class="table__cell">
+      <div class="cell_point-name">
+        {{point.name}}
+      </div>
+      <div class="cell_address">
+        {{point.address}}
+      </div>
+    </div>
+    <div class="table__cell cell_schedule">
+      {{point.schedule}}
+    </div>
+  </a>
+</div>

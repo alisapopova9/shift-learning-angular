@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { PointRepository } from '../model/point.repository';
+import { Point } from '../model/point.model';
 
 @Component({
   selector: 'app-points',
@@ -9,7 +11,11 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class PointsComponent implements OnInit {
   public searchForm: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  get points(): Point[] {
+    return this.repo.getPoints();
+  }
+
+  constructor(private fb: FormBuilder, private repo: PointRepository) { }
 
   public ngOnInit(): void {
     this.initForm();

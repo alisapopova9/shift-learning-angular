@@ -20,3 +20,34 @@
   line-height: 20px;
   color: $bold-font-color;
 }
+
+.button_more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-more {
+  display: flex;
+  color: $blue-font-color;
+  align-items: center;
+  padding: 12px;
+}
+
+.button-more:hover {
+  background-color: $blue-hovered-color;
+}
+
+.button-more_font {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+
+.button-more_border {
+  border: 1px solid $blue-font-color;
+  box-sizing: border-box;
+  border-radius: 32px;
+}

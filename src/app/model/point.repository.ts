@@ -14,7 +14,7 @@ export class PointRepository {
     });
   }
 
-  public getCards(): Point[] {
+  public getPoints(): Point[] {
     return this.points;
   }
 }

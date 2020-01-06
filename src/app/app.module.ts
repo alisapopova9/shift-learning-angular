@@ -13,6 +13,7 @@ import { CardModule } from './card/card.module';
 import { PointsComponent } from './points/points.component';
 import { CustomInputComponent } from './shared/components/custom-input/custom-input.component';
 import { CustomSelectComponent } from './shared/components/custom-select/custom-select.component';
+import { PointsTableComponent } from './points-table/points-table.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CustomSelectComponent } from './shared/components/custom-select/custom-
     ContentComponent,
     PointsComponent,
     CustomInputComponent,
-    CustomSelectComponent
+    CustomSelectComponent,
+    PointsTableComponent
   ],
   imports: [
     BrowserModule,
