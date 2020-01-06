@@ -1,7 +1,9 @@
 <div [formGroup]="form">
   <label for="card-type"></label>
-  <select formControlName="cardType" name="name" id="card-type">
-    <option value="1">1</option>
-    <option value="2">2</option>
+  <select formControlName="cardType" name="name" id="card-type" class="custom-select">
+    <option value="all">Все транспортные карты</option>
+    <option *ngFor="let card of cards" [value]="card.name">
+      {{card.name}}
+    </option>
   </select>
 </div>

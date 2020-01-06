@@ -1,0 +1,10 @@
+@import "../../../../assets/scss/_colors";
+
+.custom-select {
+  width: 100%;
+  box-sizing: border-box;
+  height: 48px;
+  border: 1px solid $border-color;
+  font-size: 18px;
+  line-height: 24px;
+}

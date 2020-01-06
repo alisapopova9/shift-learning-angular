@@ -5,6 +5,11 @@ import { CardsComponent } from './cards/cards.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'cards',
+    pathMatch: 'full'
+  },
+  {
     path: 'cards',
     component: CardsComponent
   },

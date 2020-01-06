@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Card } from '../../../model/card.model';
 
 @Component({
   selector: 'app-custom-select',
@@ -8,6 +9,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class CustomSelectComponent implements OnInit {
   @Input() public form: FormGroup;
+  @Input() public cards: Card[];
 
   constructor() { }
 

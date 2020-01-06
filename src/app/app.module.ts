@@ -14,6 +14,7 @@ import { PointsComponent } from './points/points.component';
 import { CustomInputComponent } from './shared/components/custom-input/custom-input.component';
 import { CustomSelectComponent } from './shared/components/custom-select/custom-select.component';
 import { PointsTableComponent } from './points-table/points-table.component';
+import {PointsSearchPipe} from './shared/pipes/search/search.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PointsTableComponent } from './points-table/points-table.component';
     PointsComponent,
     CustomInputComponent,
     CustomSelectComponent,
-    PointsTableComponent
+    PointsTableComponent,
+    PointsSearchPipe
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { PointsTableComponent } from './points-table/points-table.component';
     CardsModule,
     CardModule
   ],
-  providers: [],
+  providers: [PointsSearchPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

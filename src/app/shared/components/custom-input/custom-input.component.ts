@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, Output, OnInit, EventEmitter} from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
@@ -9,9 +9,18 @@ import { FormGroup } from '@angular/forms';
 export class CustomInputComponent implements OnInit {
   @Input() public form: FormGroup;
 
+  @Output() public queryChange: EventEmitter = new EventEmitter();
+
+  private query: string = null;
+
   constructor() { }
 
   public ngOnInit(): void {
+  }
+
+  private onQueryChanged(query: string): void {
+    this.query = query;
+    this.queryChange.emit(this.query);
   }
 
 }

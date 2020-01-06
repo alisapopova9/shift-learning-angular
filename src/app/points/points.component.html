@@ -5,11 +5,11 @@
     <br />
     О возможностях безналичного пополнения вы можете узнать в описании своей карты.
   </p>
-  <form [formGroup]="searchForm">
-    <app-custom-input [form]="searchForm"></app-custom-input>
-    <app-custom-select [form]="searchForm"></app-custom-select>
+  <form [formGroup]="searchForm" class="search-form">
+    <app-custom-input [form]="searchForm" (queryChange)="setQuery($event)" class="input-container"></app-custom-input>
+    <app-custom-select [form]="searchForm" [cards]="cards" class="select-container"></app-custom-select>
   </form>
-  <app-points-table [points]="points"></app-points-table>
+  <app-points-table [points]="points | pointsSearch : query"></app-points-table>
   <div class="button_more">
     <a href="#" class="button-more button-more_font button-more_border">
       Показать еще 20

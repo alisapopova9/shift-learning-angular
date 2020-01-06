@@ -1,0 +1,14 @@
+@import "../../../../assets/scss/_colors";
+
+.custom-input {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  border: 1px solid $border-color;
+  padding-left: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  background: url("../../../../assets/images/icons/search.png") no-repeat scroll 7px 13px;
+  outline: none;
+}

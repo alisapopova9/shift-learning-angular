@@ -1,4 +1,4 @@
 <div [formGroup]="form">
   <label for="city"></label>
-  <input type="text" id="city" formControlName="city" />
+  <input #pointSearch type="text" id="city" formControlName="city" class="custom-input" (change)="onQueryChanged(pointSearch.value)"/>
 </div>
