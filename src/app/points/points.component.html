@@ -5,10 +5,23 @@
     <br />
     О возможностях безналичного пополнения вы можете узнать в описании своей карты.
   </p>
+  <div class="search-span">
+    Поиск точек пополнения
+  </div>
   <form [formGroup]="searchForm" class="search-form">
     <app-custom-input [form]="searchForm" (queryChange)="setQuery($event)" class="input-container"></app-custom-input>
     <app-custom-select [form]="searchForm" [cards]="cards" class="select-container"></app-custom-select>
   </form>
+  <div class="search-options">
+    <div class="options__tags">
+      <app-search-tag [name]="'Рядом'" [icon]="'arrow.png'"></app-search-tag>
+      <app-search-tag [name]="'Открыто'" [icon]="'timer.png'"></app-search-tag>
+    </div>
+      <a href="#" class="options__map">
+        <img src="../../assets/images/icons/points.png" alt="" class="tag-map__icon">
+        Показать на карте
+      </a>
+  </div>
   <app-points-table [points]="points | pointsSearch : query"></app-points-table>
   <div class="button_more">
     <a href="#" class="button-more button-more_font button-more_border">

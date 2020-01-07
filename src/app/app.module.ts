@@ -15,6 +15,7 @@ import { CustomInputComponent } from './shared/components/custom-input/custom-in
 import { CustomSelectComponent } from './shared/components/custom-select/custom-select.component';
 import { PointsTableComponent } from './points-table/points-table.component';
 import {PointsSearchPipe} from './shared/pipes/search/search.pipe';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,7 @@ import {PointsSearchPipe} from './shared/pipes/search/search.pipe';
     TabsComponent,
     ContentComponent,
     PointsComponent,
-    CustomInputComponent,
-    CustomSelectComponent,
-    PointsTableComponent,
-    PointsSearchPipe
+    PointsTableComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +33,8 @@ import {PointsSearchPipe} from './shared/pipes/search/search.pipe';
     ReactiveFormsModule,
     AppRoutingModule,
     CardsModule,
-    CardModule
+    CardModule,
+    SharedModule
   ],
   providers: [PointsSearchPipe],
   bootstrap: [AppComponent]

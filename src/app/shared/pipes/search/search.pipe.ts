@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import {Point} from '../../../model/point.model';
+import { Point } from '../../../model/point.model';
 
 @Pipe({
   name: 'pointsSearch'

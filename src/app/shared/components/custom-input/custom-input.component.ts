@@ -9,7 +9,7 @@ import { FormGroup } from '@angular/forms';
 export class CustomInputComponent implements OnInit {
   @Input() public form: FormGroup;
 
-  @Output() public queryChange: EventEmitter = new EventEmitter();
+  @Output() public queryChange: EventEmitter<any> = new EventEmitter();
 
   private query: string = null;
 
