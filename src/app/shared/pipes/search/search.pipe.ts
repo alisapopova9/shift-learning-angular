@@ -6,7 +6,7 @@ import { Point } from '../../../model/point.model';
 })
 export class PointsSearchPipe implements PipeTransform {
 
-  public transform(items: Point[], query: string): Point[] | string {
+  public transform(items: Point[], query: string): Point[] | null {
     const result: Point[] = [];
     if (query === null) {
       return items;
@@ -17,11 +17,7 @@ export class PointsSearchPipe implements PipeTransform {
         result.push(item);
       }
     });
-    if (result !== []) {
-      return result;
-    } else {
-      return 'Ничего не найдено';
-    }
+    return result;
   }
 
 }
