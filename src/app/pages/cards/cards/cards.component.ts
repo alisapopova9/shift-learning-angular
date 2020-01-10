@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../model/card.model';
-import { CardRepository } from '../model/card.repository';
+import { Card } from '../../../model/card.model';
+import { CardRepository } from '../../../model/card.repository';
 
 @Component({
   selector: 'app-cards',

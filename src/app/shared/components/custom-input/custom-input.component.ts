@@ -7,20 +7,18 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./custom-input.component.scss']
 })
 export class CustomInputComponent implements OnInit {
-  @Input() public form: FormGroup;
+  @Output() public valueChange: EventEmitter<string> = new EventEmitter();
 
-  @Output() public queryChange: EventEmitter<any> = new EventEmitter();
-
-  private query: string = null;
+  public value: string = null;
 
   constructor() { }
 
   public ngOnInit(): void {
   }
 
-  private onQueryChanged(query: string): void {
-    this.query = query;
-    this.queryChange.emit(this.query);
+  public onValueChanged(value: string): void {
+    this.value = value;
+    this.valueChange.emit(this.value);
   }
 
 }

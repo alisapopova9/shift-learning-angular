@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardsComponent } from './cards.component';
-import { ModelModule } from '../model/model.module';
+import { ModelModule } from '../../../model/model.module';
 import { CardModule } from '../card/card.module';
 
 @NgModule({

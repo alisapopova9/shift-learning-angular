@@ -1,4 +1,4 @@
-<div [formGroup]="form">
+<div>
   <label for="city"></label>
-  <input #pointSearch type="text" id="city" formControlName="city" class="custom-input" (change)="onQueryChanged(pointSearch.value)"/>
+  <input #pointSearch type="text" id="city" class="custom-input" [(ngModel)]="value" (blur)="onValueChanged(pointSearch.value)"/>
 </div>
