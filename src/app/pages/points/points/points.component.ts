@@ -10,7 +10,7 @@ import {Card} from '../../../model/card.model';
   styleUrls: ['./points.component.scss']
 })
 export class PointsComponent implements OnInit {
-  private value: string = null;
+  public value: string = null;
 
   get points(): Point[] {
     return this.pointRepo.getPoints();
